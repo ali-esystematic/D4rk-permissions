@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-permission",
+    "name": "D4rk/laravel-permission",
     "description": "Permission handling for Laravel 8.0 and up",
     "license": "MIT",
     "keywords": [
@@ -14,13 +14,13 @@
     ],
     "authors": [
         {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "homepage": "https://spatie.be",
+            "name": "Ali Ahmed",
+            "email": "info@ali-d4rk.com",
+            "homepage": "https://ali-d4rk.com",
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/spatie/laravel-permission",
+    "homepage": "https://github.com/ali-esystematic/D4rk-permissions",
     "require": {
         "php": "^8.0",
         "illuminate/auth": "^8.12|^9.0|^10.0|^11.0|^12.0",
