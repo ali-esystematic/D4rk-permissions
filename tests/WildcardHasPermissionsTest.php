@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use PHPUnit\Framework\Attributes\RequiresPhp;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Exceptions\WildcardPermissionInvalidArgument;
-use Spatie\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Tests\TestModels\User;
-use Spatie\Permission\Tests\TestModels\WildcardPermission;
+use D4rk\Permission\Exceptions\PermissionDoesNotExist;
+use D4rk\Permission\Exceptions\WildcardPermissionInvalidArgument;
+use D4rk\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
+use D4rk\Permission\Models\Permission;
+use D4rk\Permission\Tests\TestModels\User;
+use D4rk\Permission\Tests\TestModels\WildcardPermission;
 
 class WildcardHasPermissionsTest extends TestCase
 {

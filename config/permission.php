@@ -10,10 +10,10 @@ return [
          * is often just the "Permission" model but you may use whatever you like.
          *
          * The model you want to use as a Permission model needs to implement the
-         * `Spatie\Permission\Contracts\Permission` contract.
+         * `D4rk\Permission\Contracts\Permission` contract.
          */
 
-        'permission' => Spatie\Permission\Models\Permission::class,
+        'permission' => D4rk\Permission\Models\Permission::class,
 
         /*
          * When using the "HasRoles" trait from this package, we need to know which
@@ -21,10 +21,10 @@ return [
          * is often just the "Role" model but you may use whatever you like.
          *
          * The model you want to use as a Role model needs to implement the
-         * `Spatie\Permission\Contracts\Role` contract.
+         * `D4rk\Permission\Contracts\Role` contract.
          */
 
-        'role' => Spatie\Permission\Models\Role::class,
+        'role' => D4rk\Permission\Models\Role::class,
 
     ],
 
@@ -112,10 +112,10 @@ return [
 
     /*
      * Events will fire when a role or permission is assigned/unassigned:
-     * \Spatie\Permission\Events\RoleAttached
-     * \Spatie\Permission\Events\RoleDetached
-     * \Spatie\Permission\Events\PermissionAttached
-     * \Spatie\Permission\Events\PermissionDetached
+     * \D4rk\Permission\Events\RoleAttached
+     * \D4rk\Permission\Events\RoleDetached
+     * \D4rk\Permission\Events\PermissionAttached
+     * \D4rk\Permission\Events\PermissionDetached
      *
      * To enable, set to true, and then create listeners to watch these events.
      */
@@ -136,7 +136,7 @@ return [
     /*
      * The class to use to resolve the permissions team id
      */
-    'team_resolver' => \Spatie\Permission\DefaultTeamResolver::class,
+    'team_resolver' => \D4rk\Permission\DefaultTeamResolver::class,
 
     /*
      * Passport Client Credentials Grant
@@ -172,7 +172,7 @@ return [
      * The class to use for interpreting wildcard permissions.
      * If you need to modify delimiters, override the class and specify its name here.
      */
-    // 'wildcard_permission' => Spatie\Permission\WildcardPermission::class,
+    // 'wildcard_permission' => D4rk\Permission\WildcardPermission::class,
 
     /* Cache-specific settings */
 
@@ -189,7 +189,7 @@ return [
          * The cache key used to store all permissions.
          */
 
-        'key' => 'spatie.permission.cache',
+        'key' => 'd4rk.permission.cache',
 
         /*
          * You may optionally indicate a specific cache driver to use for permission and

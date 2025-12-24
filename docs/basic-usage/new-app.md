@@ -39,7 +39,7 @@ touch database/database.sqlite
 
 # Package
 composer require spatie/laravel-permission
-php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan vendor:publish --provider="D4rk\Permission\PermissionServiceProvider"
 git add .
 git commit -m "Add Spatie Laravel Permissions package"
 php artisan migrate:fresh
@@ -68,9 +68,9 @@ git add . && git commit -m "Setup auth scaffold"
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
-use Spatie\Permission\PermissionRegistrar;
+use D4rk\Permission\Models\Permission;
+use D4rk\Permission\Models\Role;
+use D4rk\Permission\PermissionRegistrar;
 
 class PermissionsDemoSeeder extends Seeder
 {

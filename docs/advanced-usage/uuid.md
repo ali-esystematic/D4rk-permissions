@@ -125,7 +125,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Spatie\Permission\Models\Role as SpatieRole;
+use D4rk\Permission\Models\Role as SpatieRole;
 
 class Role extends SpatieRole
 {
@@ -142,7 +142,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Spatie\Permission\Models\Permission as SpatiePermission;
+use D4rk\Permission\Models\Permission as SpatiePermission;
 
 class Permission extends SpatiePermission
 {
@@ -161,10 +161,10 @@ And edit `config/permission.php`
          * is often just the "Permission" model but you may use whatever you like.
          *
          * The model you want to use as a Permission model needs to implement the
-         * `Spatie\Permission\Contracts\Permission` contract.
+         * `D4rk\Permission\Contracts\Permission` contract.
          */
 
--        'permission' => Spatie\Permission\Models\Permission::class
+-        'permission' => D4rk\Permission\Models\Permission::class
 +        'permission' => \App\Models\Permission::class,
 
         /*
@@ -173,10 +173,10 @@ And edit `config/permission.php`
          * is often just the "Role" model but you may use whatever you like.
          *
          * The model you want to use as a Role model needs to implement the
-         * `Spatie\Permission\Contracts\Role` contract.
+         * `D4rk\Permission\Contracts\Role` contract.
          */
 
--        'role' => Spatie\Permission\Models\Role::class,
+-        'role' => D4rk\Permission\Models\Role::class,
 +        'role' => \App\Models\Role::class,
 
     ],

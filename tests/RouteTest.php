@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use PHPUnit\Framework\Attributes\RequiresPhp;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Tests\TestModels\TestRolePermissionsEnum;
+use D4rk\Permission\Tests\TestModels\TestRolePermissionsEnum;
 
 class RouteTest extends TestCase
 {

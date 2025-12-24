@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use Illuminate\Support\Facades\Artisan;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Contracts\Role;
+use D4rk\Permission\Contracts\Role;
 
 class BladeTest extends TestCase
 {

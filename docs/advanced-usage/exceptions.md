@@ -15,7 +15,7 @@ You can find all the exceptions added by this package in the code here: [https:/
 
 public function register()
 {
-    $this->renderable(function (\Spatie\Permission\Exceptions\UnauthorizedException $e, $request) {
+    $this->renderable(function (\D4rk\Permission\Exceptions\UnauthorizedException $e, $request) {
         return response()->json([
             'responseMessage' => 'You do not have the required authorization.',
             'responseStatus'  => 403,
@@ -28,7 +28,7 @@ public function register()
 ```php
 
 ->withExceptions(function (Exceptions $exceptions) {
-    $exceptions->render(function (\Spatie\Permission\Exceptions\UnauthorizedException $e, $request) {
+    $exceptions->render(function (\D4rk\Permission\Exceptions\UnauthorizedException $e, $request) {
         return response()->json([
             'responseMessage' => 'You do not have the required authorization.',
             'responseStatus'  => 403,

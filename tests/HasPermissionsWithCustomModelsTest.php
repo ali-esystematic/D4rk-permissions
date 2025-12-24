@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Tests\TestModels\Admin;
-use Spatie\Permission\Tests\TestModels\Permission;
-use Spatie\Permission\Tests\TestModels\User;
+use D4rk\Permission\PermissionRegistrar;
+use D4rk\Permission\Tests\TestModels\Admin;
+use D4rk\Permission\Tests\TestModels\Permission;
+use D4rk\Permission\Tests\TestModels\User;
 
 class HasPermissionsWithCustomModelsTest extends HasPermissionsTest
 {

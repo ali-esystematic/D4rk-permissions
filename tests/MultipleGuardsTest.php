@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Tests\TestModels\Manager;
+use D4rk\Permission\Contracts\Permission;
+use D4rk\Permission\Tests\TestModels\Manager;
 
 class MultipleGuardsTest extends TestCase
 {

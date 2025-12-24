@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission\Contracts;
+namespace D4rk\Permission\Contracts;
 
 interface PermissionsTeamResolver
 {

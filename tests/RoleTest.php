@@ -1,18 +1,18 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Exceptions\RoleAlreadyExists;
-use Spatie\Permission\Exceptions\RoleDoesNotExist;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Tests\TestModels\Admin;
-use Spatie\Permission\Tests\TestModels\RuntimeRole;
-use Spatie\Permission\Tests\TestModels\User;
+use D4rk\Permission\Contracts\Role;
+use D4rk\Permission\Exceptions\GuardDoesNotMatch;
+use D4rk\Permission\Exceptions\PermissionDoesNotExist;
+use D4rk\Permission\Exceptions\RoleAlreadyExists;
+use D4rk\Permission\Exceptions\RoleDoesNotExist;
+use D4rk\Permission\Models\Permission;
+use D4rk\Permission\PermissionRegistrar;
+use D4rk\Permission\Tests\TestModels\Admin;
+use D4rk\Permission\Tests\TestModels\RuntimeRole;
+use D4rk\Permission\Tests\TestModels\User;
 
 class RoleTest extends TestCase
 {

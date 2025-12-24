@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Tests\TestModels\User;
+use D4rk\Permission\Contracts\Permission;
+use D4rk\Permission\Contracts\Role;
+use D4rk\Permission\Exceptions\PermissionDoesNotExist;
+use D4rk\Permission\PermissionRegistrar;
+use D4rk\Permission\Tests\TestModels\User;
 
 class CacheTest extends TestCase
 {
@@ -284,7 +284,7 @@ class CacheTest extends TestCase
     public function it_can_reset_the_cache_with_artisan_command()
     {
         Artisan::call('permission:create-permission', ['name' => 'new-permission']);
-        $this->assertCount(1, \Spatie\Permission\Models\Permission::where('name', 'new-permission')->get());
+        $this->assertCount(1, \D4rk\Permission\Models\Permission::where('name', 'new-permission')->get());
 
         $this->resetQueryCount();
         // retrieve permissions, and assert that the cache had to be loaded

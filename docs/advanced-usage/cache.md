@@ -37,14 +37,14 @@ $user->syncRoles(params);
 ## Manual cache reset
 To manually reset the cache for this package, you can run the following in your app code:
 ```php
-app()->make(\Spatie\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
+app()->make(\D4rk\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
 ```
 
 Or you can use an Artisan command:
 ```bash
 php artisan permission:cache-reset
 ```
-(This command is effectively an alias for `artisan cache:forget spatie.permission.cache` but respects the package config as well.)
+(This command is effectively an alias for `artisan cache:forget d4rk.permission.cache` but respects the package config as well.)
 
 ## Octane cache reset
 In many cases Octane will not need additional cache resets; however, if you find that cache results are stale or crossing over between requests, you can force a cache flush upon every Octane reset cycle by editing the `/config/permission.php` and setting `register_octane_reset_listener` to true.
@@ -61,7 +61,7 @@ If you wish to alter the expiration time you may do so in the `config/permission
 
 ### Cache Key
 
-The default cache key is `spatie.permission.cache`.
+The default cache key is `d4rk.permission.cache`.
 We recommend not changing the cache "key" name. Usually changing it is a bad idea. More likely setting the cache `prefix` is better, as mentioned below.
 
 
@@ -76,7 +76,7 @@ Most multi-tenant "packages" take care of this for you when switching tenants. O
 Tip: Most parts of your multitenancy app will relate to a single tenant during a given request lifecycle, so the following step will not be needed: However, in the less-common situation where your app might be switching between multiple tenants during a single request lifecycle (specifically: where changing the cache key/prefix (such as when switching between tenants) or switching the cache store), then after switching tenants or changing the cache configuration you will need to reinitialize the cache of the `PermissionRegistrar` so that the updated `CacheStore` and cache configuration are used.
 
 ```php
-app()->make(\Spatie\Permission\PermissionRegistrar::class)->initializeCache();
+app()->make(\D4rk\Permission\PermissionRegistrar::class)->initializeCache();
 ```
 
 

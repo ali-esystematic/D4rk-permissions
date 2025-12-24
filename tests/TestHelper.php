@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

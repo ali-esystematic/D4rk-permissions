@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Permission\Tests\TestModels;
+namespace D4rk\Permission\Tests\TestModels;
 
-use Spatie\Permission\Traits\HasRoles;
+use D4rk\Permission\Traits\HasRoles;
 
 class User extends UserWithoutHasRoles
 {

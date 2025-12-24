@@ -1,23 +1,23 @@
 <?php
 
-namespace Spatie\Permission\Traits;
+namespace D4rk\Permission\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Contracts\Wildcard;
-use Spatie\Permission\Events\PermissionAttached;
-use Spatie\Permission\Events\PermissionDetached;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Exceptions\WildcardPermissionInvalidArgument;
-use Spatie\Permission\Exceptions\WildcardPermissionNotImplementsContract;
-use Spatie\Permission\Guard;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\WildcardPermission;
+use D4rk\Permission\Contracts\Permission;
+use D4rk\Permission\Contracts\Role;
+use D4rk\Permission\Contracts\Wildcard;
+use D4rk\Permission\Events\PermissionAttached;
+use D4rk\Permission\Events\PermissionDetached;
+use D4rk\Permission\Exceptions\GuardDoesNotMatch;
+use D4rk\Permission\Exceptions\PermissionDoesNotExist;
+use D4rk\Permission\Exceptions\WildcardPermissionInvalidArgument;
+use D4rk\Permission\Exceptions\WildcardPermissionNotImplementsContract;
+use D4rk\Permission\Guard;
+use D4rk\Permission\PermissionRegistrar;
+use D4rk\Permission\WildcardPermission;
 
 trait HasPermissions
 {

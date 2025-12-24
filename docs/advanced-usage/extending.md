@@ -69,15 +69,15 @@ Note the following requirements when extending/replacing the models:
 ### Extending
 If you need to EXTEND the existing `Role` or `Permission` models note that:
 
-- Your `Role` model needs to `extend` the `Spatie\Permission\Models\Role` model
-- Your `Permission` model needs to `extend` the `Spatie\Permission\Models\Permission` model
+- Your `Role` model needs to `extend` the `D4rk\Permission\Models\Role` model
+- Your `Permission` model needs to `extend` the `D4rk\Permission\Models\Permission` model
 - You need to update `config/permission.php` to specify your namespaced model
 
 eg:
 ```php
 <?php
 namespace App\Models;
-use Spatie\Permission\Models\Role as SpatieRole;
+use D4rk\Permission\Models\Role as SpatieRole;
 
 class Role extends SpatieRole
 {
@@ -91,7 +91,7 @@ In MOST cases you will only EXTEND the models as described above.
 In the rare case that you have need to REPLACE the existing `Role` or `Permission` models you need to keep the following things in mind:
 
 - If you are REPLACING and NOT EXTENDING the existing Model, do the following (and do NOT extend as described above):
-- Your `Role` model needs to implement the `Spatie\Permission\Contracts\Role` contract
-- Your `Permission` model needs to implement the `Spatie\Permission\Contracts\Permission` contract
+- Your `Role` model needs to implement the `D4rk\Permission\Contracts\Role` contract
+- Your `Permission` model needs to implement the `D4rk\Permission\Contracts\Permission` contract
 - You need to update `config/permission.php` to specify your namespaced model
 

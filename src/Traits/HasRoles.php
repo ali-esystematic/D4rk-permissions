@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\Permission\Traits;
+namespace D4rk\Permission\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Events\RoleAttached;
-use Spatie\Permission\Events\RoleDetached;
-use Spatie\Permission\PermissionRegistrar;
+use D4rk\Permission\Contracts\Permission;
+use D4rk\Permission\Contracts\Role;
+use D4rk\Permission\Events\RoleAttached;
+use D4rk\Permission\Events\RoleDetached;
+use D4rk\Permission\PermissionRegistrar;
 
 trait HasRoles
 {

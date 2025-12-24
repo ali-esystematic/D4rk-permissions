@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Contracts\Permission as PermissionContract;
-use Spatie\Permission\Contracts\Role as RoleContract;
-use Spatie\Permission\Models\Permission as SpatiePermission;
-use Spatie\Permission\Models\Role as SpatieRole;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Tests\TestModels\Permission as TestPermission;
-use Spatie\Permission\Tests\TestModels\Role as TestRole;
+use D4rk\Permission\Contracts\Permission as PermissionContract;
+use D4rk\Permission\Contracts\Role as RoleContract;
+use D4rk\Permission\Models\Permission as SpatiePermission;
+use D4rk\Permission\Models\Role as SpatieRole;
+use D4rk\Permission\PermissionRegistrar;
+use D4rk\Permission\Tests\TestModels\Permission as TestPermission;
+use D4rk\Permission\Tests\TestModels\Role as TestRole;
 
 class PermissionRegistrarTest extends TestCase
 {

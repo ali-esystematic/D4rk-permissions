@@ -17,13 +17,13 @@ See the "Prerequisites" documentation page for compatibility details.
 
         composer require spatie/laravel-permission
 
-4. The Service Provider will automatically be registered; however, if you wish to manually register it, you can manually add the `Spatie\Permission\PermissionServiceProvider::class` service provider to the array in `bootstrap/providers.php` (`config/app.php` in Laravel 10 or older).
+4. The Service Provider will automatically be registered; however, if you wish to manually register it, you can manually add the `D4rk\Permission\PermissionServiceProvider::class` service provider to the array in `bootstrap/providers.php` (`config/app.php` in Laravel 10 or older).
 
 
 5. **You should publish** [the migration](https://github.com/spatie/laravel-permission/blob/main/database/migrations/create_permission_tables.php.stub) and the [`config/permission.php` config file](https://github.com/spatie/laravel-permission/blob/main/config/permission.php) with:
 
     ```
-    php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+    php artisan vendor:publish --provider="D4rk\Permission\PermissionServiceProvider"
     ```
 
 6. BEFORE RUNNING MIGRATIONS

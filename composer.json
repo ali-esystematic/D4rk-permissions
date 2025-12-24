@@ -38,7 +38,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Spatie\\Permission\\": "src"
+            "D4rk\\Permission\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -46,7 +46,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Permission\\Tests\\": "tests"
+            "D4rk\\Permission\\Tests\\": "tests"
         }
     },
     "config": {
@@ -59,7 +59,7 @@
         },
         "laravel": {
             "providers": [
-                "Spatie\\Permission\\PermissionServiceProvider"
+                "D4rk\\Permission\\PermissionServiceProvider"
             ]
         }
     },

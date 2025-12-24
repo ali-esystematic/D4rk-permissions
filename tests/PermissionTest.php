@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Exceptions\PermissionAlreadyExists;
-use Spatie\Permission\Tests\TestModels\User;
+use D4rk\Permission\Contracts\Permission;
+use D4rk\Permission\Exceptions\PermissionAlreadyExists;
+use D4rk\Permission\Tests\TestModels\User;
 
 class PermissionTest extends TestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Tests\TestModels\Admin;
-use Spatie\Permission\Tests\TestModels\Role;
+use D4rk\Permission\Tests\TestModels\Admin;
+use D4rk\Permission\Tests\TestModels\Role;
 
 class HasRolesWithCustomModelsTest extends HasRolesTest
 {

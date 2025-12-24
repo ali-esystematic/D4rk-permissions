@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Permission\Commands;
+namespace D4rk\Permission\Commands;
 
 use Illuminate\Console\Command;
-use Spatie\Permission\Contracts\Role as RoleContract;
+use D4rk\Permission\Contracts\Role as RoleContract;
 
 class AssignRole extends Command
 {
@@ -37,7 +37,7 @@ class AssignRole extends Command
             return Command::FAILURE;
         }
 
-        /** @var \Spatie\Permission\Contracts\Role $roleClass */
+        /** @var \D4rk\Permission\Contracts\Role $roleClass */
         $roleClass = app(RoleContract::class);
 
         $role = $roleClass::findOrCreate($roleName, $guardName);

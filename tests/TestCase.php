@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace D4rk\Permission\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
@@ -12,33 +12,33 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Laravel\Passport\PassportServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Exceptions\UnauthorizedException;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\PermissionServiceProvider;
-use Spatie\Permission\Tests\TestModels\Admin;
-use Spatie\Permission\Tests\TestModels\Client;
-use Spatie\Permission\Tests\TestModels\User;
+use D4rk\Permission\Contracts\Permission;
+use D4rk\Permission\Contracts\Role;
+use D4rk\Permission\Exceptions\UnauthorizedException;
+use D4rk\Permission\PermissionRegistrar;
+use D4rk\Permission\PermissionServiceProvider;
+use D4rk\Permission\Tests\TestModels\Admin;
+use D4rk\Permission\Tests\TestModels\Client;
+use D4rk\Permission\Tests\TestModels\User;
 
 abstract class TestCase extends Orchestra
 {
-    /** @var \Spatie\Permission\Tests\TestModels\User */
+    /** @var \D4rk\Permission\Tests\TestModels\User */
     protected $testUser;
 
-    /** @var \Spatie\Permission\Tests\TestModels\Admin */
+    /** @var \D4rk\Permission\Tests\TestModels\Admin */
     protected $testAdmin;
 
-    /** @var \Spatie\Permission\Models\Role */
+    /** @var \D4rk\Permission\Models\Role */
     protected $testUserRole;
 
-    /** @var \Spatie\Permission\Models\Role */
+    /** @var \D4rk\Permission\Models\Role */
     protected $testAdminRole;
 
-    /** @var \Spatie\Permission\Models\Permission */
+    /** @var \D4rk\Permission\Models\Permission */
     protected $testUserPermission;
 
-    /** @var \Spatie\Permission\Models\Permission */
+    /** @var \D4rk\Permission\Models\Permission */
     protected $testAdminPermission;
 
     /** @var bool */
@@ -56,9 +56,9 @@ abstract class TestCase extends Orchestra
 
     protected Client $testClient;
 
-    protected \Spatie\Permission\Models\Permission $testClientPermission;
+    protected \D4rk\Permission\Models\Permission $testClientPermission;
 
-    protected \Spatie\Permission\Models\Role $testClientRole;
+    protected \D4rk\Permission\Models\Role $testClientRole;
 
     protected function setUp(): void
     {
@@ -136,8 +136,8 @@ abstract class TestCase extends Orchestra
         $app['config']->set('auth.guards.admin', ['driver' => 'session', 'provider' => 'admins']);
         $app['config']->set('auth.providers.admins', ['driver' => 'eloquent', 'model' => Admin::class]);
         if ($this->useCustomModels) {
-            $app['config']->set('permission.models.permission', \Spatie\Permission\Tests\TestModels\Permission::class);
-            $app['config']->set('permission.models.role', \Spatie\Permission\Tests\TestModels\Role::class);
+            $app['config']->set('permission.models.permission', \D4rk\Permission\Tests\TestModels\Permission::class);
+            $app['config']->set('permission.models.role', \D4rk\Permission\Tests\TestModels\Role::class);
         }
         // Use test User model for users provider
         $app['config']->set('auth.providers.users.model', User::class);
